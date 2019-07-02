@@ -1,0 +1,9 @@
+<h1>Task</h1>
+   <h2><%= @task.title %></h2>
+   <p><%= @task.details %></p>
+   <% if @task.completed %>
+     <p>[X]</p>
+    <% else %>
+     <p>[]</p>
+   <% end %>
+   <%= link_to "back to all tasks", tasks_path %>
